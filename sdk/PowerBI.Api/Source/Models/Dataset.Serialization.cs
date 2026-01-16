@@ -175,7 +175,7 @@ namespace Microsoft.PowerBI.Api.Models
                     webUrl = property.Value.GetString();
                     continue;
                 }
-                if (property.NameEquals("IsEffectiveIdentityRequired"u8))
+                if (property.NameEquals("isEffectiveIdentityRequired"u8))
                 {
                     if (property.Value.ValueKind == JsonValueKind.Null)
                     {
@@ -184,7 +184,7 @@ namespace Microsoft.PowerBI.Api.Models
                     isEffectiveIdentityRequired = property.Value.GetBoolean();
                     continue;
                 }
-                if (property.NameEquals("IsEffectiveIdentityRolesRequired"u8))
+                if (property.NameEquals("isEffectiveIdentityRolesRequired"u8))
                 {
                     if (property.Value.ValueKind == JsonValueKind.Null)
                     {
@@ -193,7 +193,7 @@ namespace Microsoft.PowerBI.Api.Models
                     isEffectiveIdentityRolesRequired = property.Value.GetBoolean();
                     continue;
                 }
-                if (property.NameEquals("IsOnPremGatewayRequired"u8))
+                if (property.NameEquals("isOnPremGatewayRequired"u8))
                 {
                     if (property.Value.ValueKind == JsonValueKind.Null)
                     {
@@ -202,7 +202,7 @@ namespace Microsoft.PowerBI.Api.Models
                     isOnPremGatewayRequired = property.Value.GetBoolean();
                     continue;
                 }
-                if (property.NameEquals("Encryption"u8))
+                if (property.NameEquals("encryption"u8))
                 {
                     if (property.Value.ValueKind == JsonValueKind.Null)
                     {
@@ -234,7 +234,7 @@ namespace Microsoft.PowerBI.Api.Models
                     addRowsAPIEnabled = property.Value.GetBoolean();
                     continue;
                 }
-                if (property.NameEquals("IsRefreshable"u8))
+                if (property.NameEquals("isRefreshable"u8))
                 {
                     if (property.Value.ValueKind == JsonValueKind.Null)
                     {
@@ -243,7 +243,7 @@ namespace Microsoft.PowerBI.Api.Models
                     isRefreshable = property.Value.GetBoolean();
                     continue;
                 }
-                if (property.NameEquals("IsInPlaceSharingEnabled"u8))
+                if (property.NameEquals("isInPlaceSharingEnabled"u8))
                 {
                     if (property.Value.ValueKind == JsonValueKind.Null)
                     {
