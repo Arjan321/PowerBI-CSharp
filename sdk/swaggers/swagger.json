@@ -23203,11 +23203,11 @@
                     "type": "boolean",
                     "description": "Whether the dataset allows adding new rows"
                 },
-                "IsRefreshable": {
+                "isRefreshable": {
                     "type": "boolean",
                     "description": "This field returns `true` when the dataset is either recently refreshed or is configured for automatic refresh, with the connection mode specifically set to 'Import'. The value will return `false` for other connection modes, such as 'DirectQuery' and 'LiveConnection', regardless of whether the dataset is manually refreshed or is set up for automatic refresh."
                 },
-                "IsInPlaceSharingEnabled": {
+                "isInPlaceSharingEnabled": {
                     "type": "boolean",
                     "description": "Whether the dataset can be shared with external users to be consumed in their own tenant"
                 }
@@ -23216,19 +23216,19 @@
         "DatasetSecurityProperties": {
             "description": "A list of security related properties of a Power BI dataset.",
             "properties": {
-                "IsEffectiveIdentityRequired": {
+                "isEffectiveIdentityRequired": {
                     "type": "boolean",
                     "description": "Whether the dataset requires an effective identity, which you must send in a [GenerateToken](/rest/api/power-bi/embed-token/generate-token) API call."
                 },
-                "IsEffectiveIdentityRolesRequired": {
+                "isEffectiveIdentityRolesRequired": {
                     "type": "boolean",
                     "description": "Whether row-level security is defined inside the Power BI .pbix file. If so, you must specify a role."
                 },
-                "IsOnPremGatewayRequired": {
+                "isOnPremGatewayRequired": {
                     "type": "boolean",
                     "description": "Whether the dataset requires an on-premises data gateway"
                 },
-                "Encryption": {
+                "encryption": {
                     "$ref": "#/definitions/Encryption",
                     "description": "Dataset encryption information. Only applicable when `$expand` is specified."
                 }
