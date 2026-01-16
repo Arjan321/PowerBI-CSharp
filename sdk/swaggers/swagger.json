@@ -23228,7 +23228,7 @@
                     "type": "boolean",
                     "description": "Whether the dataset requires an on-premises data gateway"
                 },
-                "Encryption": {
+                "encryption": {
                     "$ref": "#/definitions/Encryption",
                     "description": "Dataset encryption information. Only applicable when `$expand` is specified."
                 }

@@ -33,7 +33,7 @@ namespace Microsoft.PowerBI.Api.Models
             }
             if (Optional.IsDefined(Encryption))
             {
-                writer.WritePropertyName("Encryption"u8);
+                writer.WritePropertyName("encryption"u8);
                 writer.WriteObjectValue(Encryption);
             }
             writer.WriteEndObject();
@@ -78,7 +78,7 @@ namespace Microsoft.PowerBI.Api.Models
                     isOnPremGatewayRequired = property.Value.GetBoolean();
                     continue;
                 }
-                if (property.NameEquals("Encryption"u8))
+                if (property.NameEquals("encryption"u8))
                 {
                     if (property.Value.ValueKind == JsonValueKind.Null)
                     {
